@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.header-link {
+  @apply text-gray-600 hover:text-blue-600 inset-shadow-sm shadow-xs h-8 w-[80%] text-center flex justify-center items-center;
+}
