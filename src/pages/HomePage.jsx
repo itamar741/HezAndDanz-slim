@@ -1,29 +1,18 @@
-// pages/HomePage.jsx
-import { useState } from 'react';
+// pages/HomePage.jsx (SLIM)
 import SiteFooter from '@/components/SiteFooter';
 import '../styles/HomePage.css';
 import OurSocial from '../components/Social/OurSocial';
-import grayLogo from '../assets/images/grayLogo.png';
-import hoodie from '../assets/images/pinImage3.png';
-import signupVideo from '../assets/videos/trainingVid3.mov';
 import RegisterButton from '@/components/RegisterButton';
-import logo from '../assets/images/HezAndDanzName.png';
-import bg1 from '@/assets/images/gym/gym2.jpg';
-import bg2 from '@/assets/images/gym/gym3.jpg';
-import bg3 from '@/assets/images/gym/gym4.jpg';
-import bg4 from '@/assets/images/gym/gym5.jpg';
 import HeroSlideshow from '@/components/HeroSlideshow';
-import funVid1 from '@/assets/videos/social/funVid.mov';
-import funVid2 from '@/assets/videos/social/Reel1.mov';
-import trainingImg1 from '@/assets/videos/social/trainingImg1.jpg';
-import streetImg from '@/assets/videos/social/streetImg.jpg';
+
+import black from '@/assets/Solid_black.png';
 
 function HomePage() {
   return (
     <div id="main-HP" className="grid grid-cols-12 gap-4 mx-[20px]">
       {/* Hero slideshow */}
       <div className="col-span-12">
-        <HeroSlideshow images={[bg1, bg2, bg3, bg4]} logoSrc={logo} />
+        <HeroSlideshow images={[black, black, black, black]} logoSrc={black} />
       </div>
 
       {/* About section */}
@@ -53,7 +42,7 @@ function HomePage() {
         {/* Nutrition */}
         <div className="md:col-span-6 h-[600px] rounded-xl relative">
           <img
-            src={hoodie}
+            src={black}
             alt=""
             className="w-full h-full object-cover block"
           />
@@ -74,16 +63,14 @@ function HomePage() {
 
         {/* Training */}
         <div className="md:col-span-6 h-[600px] rounded-xl overflow-hidden relative">
-          <video
-            src={signupVideo}
-            autoPlay
-            loop
-            muted
-            playsInline
+          {/* מחליף את הוידאו בתמונה שחורה */}
+          <img
+            src={black}
+            alt=""
             className="w-full h-full object-cover block"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center font-fredoka text-center px-4">
-            <h2 className="text-white text-2xl md:text-4xl font-light mb-4">
+            <h2 className="text-white text-2ל md:text-4xl font-light mb-4">
               חווית אימון אחרת
               <br /> בלב ראשון לציון
             </h2>
@@ -99,14 +86,7 @@ function HomePage() {
 
       {/* Social section */}
       <div className="col-span-12">
-        <OurSocial
-          images={[
-            streetImg,
-            trainingImg1,
-            { type: 'video', src: funVid1 },
-            { type: 'video', src: funVid2 },
-          ]}
-        />
+        <OurSocial images={[black, black, black, black]} />
       </div>
 
       <section className="grid grid-cols-12 col-span-12 mb-[2%]">
