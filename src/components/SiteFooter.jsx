@@ -1,4 +1,4 @@
-import footerBg from '@/assets/images/footer3.png';
+import footerBg from '../assets/Solid_black.png';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { SiGooglemaps, SiWaze } from 'react-icons/si';
 

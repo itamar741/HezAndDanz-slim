@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { HeartIcon } from '@heroicons/react/24/outline';
 import '../styles/Header.css';
 import menuSVG from '../assets/icons/greenMenu.svg';
-import logo from '../assets/images/LOGO.png';
+import logo from '../assets/Solid_black.png';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
